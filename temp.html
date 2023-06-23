@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Temperature Converter</title>
+   
+    <!-- for External CSS  -->
+   <link rel="stylesheet" href="./temp.css">
+    
+   <!-- for fontawesome icon  -->
+   <script src="https://kit.fontawesome.com/ffe8c3f3d7.js" crossorigin="anonymous"></script>
+
+   <!-- For Scroll Reveal -->
+   <script src="https://unpkg.com/scrollreveal"></script>
+
+   <!-- for typed.js  -->
+   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+<body>
+
+    <!-- left-container  -->
+   <div class="tag">
+       <h1>Temperature <span class="move"></span></h1>
+       <p>From Hot to Cold, We've Got You Covered!</p>
+   </div>
+
+   <!-- right-container  -->
+   <div class="container">
+      <div class="title">
+         <h1>Temperature &nbsp;&nbsp;Converter</h1>
+         <span class="temp-icon"><i class="fa-solid fa-temperature-low"></i></span>
+      </div>
+      <div id="celcius">
+         <input type="number" placeholder="Celcius">
+         <span class="icon">&#8451</span>
+      </div>
+      <div id="fahrenheit">
+         <input type="number" placeholder="Fahrenheit">
+         <span class="icon">&#8457</span>
+      </div>
+      <div id="kelvin">
+         <input type="number" placeholder="Kelvin">
+         <span class="icon">&#8490</span>
+      </div>
+      <div class="btn">
+         <button>Reset</button>
+      </div>
+   </div>
+
+   <!-- for External temp.js file -->
+   <script src="./temp.js"></script>
+</body>
+</html>
