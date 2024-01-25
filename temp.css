@@ -2,19 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+   
 }
 body{
-    display: flex;
-    justify-content:space-around;
-    /* flex-direction: column; */
-    align-self:center;
-    min-height: 90vh;
-    margin-top: 70px;
-    margin-bottom: 100px;
-    background: linear-gradient(to bottom left,#050A30,#000C66,#0000FF,#7EC8E3);
+   
+    background: linear-gradient(to bottom left,#050A30,#000C66,#6161ca,#7EC8E3);
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size:cover;
 }
+.main-container{
+    display: flex;
+    width: 100%;
+    justify-content:space-around;
+    align-items:center;
+    height: auto;
+    margin: 50px auto;
+}
+
 .tag{
     border-radius: 10px;
     padding: 50px;
@@ -22,6 +27,7 @@ body{
     text-align: center;
     margin-top: 150px;
     transition: ease-in;
+    border: 2px solid yellow;
 }
 .tag:hover{
     box-shadow:0px 0px 10px #000 ;
@@ -39,13 +45,13 @@ body{
     color: #0b1243;
 }
 .container{
-     max-width: 400px;
+     width: 400px;
+     height:88%;
      background: rgb(53, 105, 210);
      border-radius: 10px;
      box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.4);
      font-family: sans-serif;
      padding: 40px;
-     /* margin-left: 400px; */
 }
 .title{
     display: flex;
@@ -63,7 +69,7 @@ h1{
 } 
 .title h1{
     padding-left: 51px;
-    /* border: 1px solid; */
+    
 }
 #celcius,#fahrenheit,#kelvin{
     display: flex;
@@ -123,3 +129,35 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
     border: 3px solid #fff;
 }
 
+@media screen and (max-width:1096px) {
+    
+    .main-container{
+        display:flex;
+        flex-direction: column;
+        gap: 50px;
+       
+    }
+    .tag{
+        margin:30px 20px ;
+    }
+    .tag h1{
+        font-size: 40px;
+        color:#c1e021;
+    }
+    
+}
+
+@media screen and (max-width:452px) {
+    .container{
+        width: 75%;
+    }
+    .title h1{
+        padding: 10px;
+    }
+    #celcius,#fahrenheit,#kelvin{
+       margin-left:5px;
+       margin-right: 5px;
+    }
+}
+
+    
