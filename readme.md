@@ -1,5 +1,5 @@
 # Temperature Convertor 
-This Project is built on `HTML`, `CSS`, and `Javacsript`. it is responsive for different devices. An Input is given into any parameter unit then, Output will be shown equivalent result in other units section.
+This Project is built on `HTML`, `CSS`, and `Javascript`. it is responsive for different devices. An Input is given into any parameter unit then, Output will be shown equivalent result in other units section.
 
 ## Used Scroll Reveal link :-
 ```
